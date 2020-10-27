@@ -12,3 +12,6 @@ migrate=Migrate(app,db)
 def home():
     return {'message':'hello'}
 
+from directory.apps.users_app import users
+
+app.register_blueprint(users)
